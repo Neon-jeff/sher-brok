@@ -11,11 +11,12 @@ import requests
 sender=settings.EMAIL_USER
 auth=settings.EMAIL_AUTH
 
-def SendEmail(user,otp):
 
+def SendEmail(user,otp):
+    print(sender, auth)
     recipient = f'{user.email}'
 
-# Create message
+    # Create message
     msg = MIMEMultipart("alternative")
     email_template=render_to_string('pages/index.html',{'user':user,'otp':otp})
     # text="Hi, welcome to nello"
@@ -24,10 +25,10 @@ def SendEmail(user,otp):
     msg['To'] = recipient
     part2 = MIMEText(email_template, 'html')
     msg.attach(part2)
-# Create server object with SSL option
+    # Create server object with SSL option
     server = smtplib.SMTP_SSL("smtp.zoho.com", 465)
 
-# Perform operations via server
+    # Perform operations via server
     server.login(sender, auth)
     server.sendmail(sender, [recipient], msg.as_string())
     server.quit()
