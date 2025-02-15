@@ -50,24 +50,29 @@ wallet_address=[
 deposit_address=[
         {
             "name":"BTC",
-            "address":"bc1qp00d8xl6394nlgvvzc9sc4ymn9kud2va8k9etk",
+            "address":"bc1qcd6j9acvrks24qfdfghy22z2y82w8medcavnnd",
             "image":"https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"
         },
-        #         {
-        #     "name":"ETH",
-        #     "address":"0xF57DBF1F9323283AA6031dA8B07284CE2ab32b0D",
-        #     "image":"https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
-        # },
+        {
+            "name":"ETH",
+            "address":"0x7f468F94C6C1e57eeC85c5f46C65b122FB50B42a",
+            "image":"https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
+        },
+        {
+            "name":"USDT (ERC-20)",
+            "address":"0x7f468F94C6C1e57eeC85c5f46C65b122FB50B42a",
+            "image":"https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
+        },
         #          {
         #     "name":"XRP",
         #     "address":"r4A9LSN2K7xKeybJkK6PBjPpHq1RCCtbwb",
         #     "image":"https://s2.coinmarketcap.com/static/img/coins/64x64/52.png"
         # },
-                        {
-            "name":"USDT(TRC-20)",
-            "address":"TNpr32fvCCtrCo3yPCsLc2rwM3h5YowJwe",
-            "image":"https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
-        },
+        #                 {
+        #     "name":"USDT(TRC-20)",
+        #     "address":"TNpr32fvCCtrCo3yPCsLc2rwM3h5YowJwe",
+        #     "image":"https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
+        # },
         # {
         #     "name":"SOL",
         #     "address":"9xB51EBjDpLYubENmYwTvCmrdPPhhE7AwKV4KnvySrt9",
